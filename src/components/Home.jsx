@@ -1,5 +1,5 @@
 import { Grid } from "@mui/material";
-import AboutMeCard from "./aboutMeCard";
+import AboutMeCard from "./AboutMeCard";
 import Main from "./Main";
 
 const Home = () => {
