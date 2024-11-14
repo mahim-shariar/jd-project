@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.social-btnStyle {
+  color: #565656;
+  border: 2px solid #565656;
+  border-radius: 50%;
+  padding: 13px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-btnStyle:hover {
+  color: #14c5fd;
+  border: 2px solid #14c5fd;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-me-btn {
+  background-color: #14c5fd;
+  border: 2px solid #14c5fd;
+  border-radius: 50px;
+  padding: 13px;
+  transition: all 0.3s ease-in-out;
+  color: #1a1a1a;
+  width: 300px;
+  font-size: 20px;
+  font-weight: 600;
+  height: 50px;
+}
+
+.contact-me-btn:hover {
+  background-color: #1a1a1a;
+  border: 2px solid #14c5fd;
+  color: #14c5fd;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-button {
+  color: white;
+  border: 2px solid #565656;
+  border-radius: 50px;
+  display: flex;
+  padding: 8px 10px;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 50px;
+  font-size: 14px;
+}
