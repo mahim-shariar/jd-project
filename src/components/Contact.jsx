@@ -61,7 +61,11 @@ const Contact = () => {
   };
 
   return (
-    <div style={{ padding: "50px", marginTop: "100px" }}>
+    <div
+      style={{ padding: "50px", marginTop: "100px" }}
+      id="contact"
+      className="section"
+    >
       {/* Snackbar for success or error message */}
       <Snackbar
         open={openSnackbar}

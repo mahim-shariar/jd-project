@@ -30,7 +30,11 @@ const Skills = () => {
   ];
 
   return (
-    <Box sx={{ padding: "50px", color: "white", mt: 10 }}>
+    <Box
+      sx={{ padding: "50px", color: "white", mt: 10 }}
+      id="skills"
+      className="section"
+    >
       {/* Header Button */}
       <button className="header-button">
         <MdOutlineDesignServices />

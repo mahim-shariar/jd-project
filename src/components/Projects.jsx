@@ -2,7 +2,11 @@ import { GoProjectSymlink } from "react-icons/go";
 
 const Projects = () => {
   return (
-    <div style={{ padding: "50px", marginTop: "100px" }}>
+    <div
+      style={{ padding: "50px", marginTop: "100px" }}
+      id="projects"
+      className="section"
+    >
       <button className="header-button">
         {" "}
         <GoProjectSymlink />
@@ -13,7 +17,7 @@ const Projects = () => {
       </h1>
 
       {/* YouTube Video Section */}
-      <div className="youtube-section mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="grid grid-cols-1 gap-10 mt-12 youtube-section sm:grid-cols-2 lg:grid-cols-4">
         <div className="youtube-video">
           <iframe
             width="100%"
@@ -83,7 +87,7 @@ const Projects = () => {
       </div>
 
       {/* YouTube Channel Section */}
-      <div className="channel-section mt-12">
+      <div className="mt-12 channel-section">
         <h2 className="text-3xl text-white">Check Out My YouTube Channel</h2>
         <p className="text-[#999999] mt-4 text-lg">
           Explore more content and videos from me on my YouTube channel.

@@ -9,27 +9,27 @@ const AboutMeCard = () => {
     <div className="container my-5">
       <div
         style={{ border: "1px solid #565656" }}
-        className="p-10 rounded-3xl border-1 border-gray-600"
+        className="p-10 border-gray-600 rounded-3xl border-1"
       >
-        <div className="flex justify-between items-center">
+        <div className="flex items-center justify-between">
           {/* <h1 className="text-5xl text-white">JYD</h1> */}
           <img className="w-20 h-20" src={JayedLogo} alt="" />
-          <p className="text-white font-semibold"> Video Editor </p>
+          <p className="font-semibold text-white"> Video Editor </p>
         </div>
 
         <div className="mt-10">
           <img
-            className="rounded-3xl filter grayscale mx-auto"
+            className="mx-auto rounded-3xl filter grayscale"
             src={jayedimg}
             alt=""
           />
         </div>
 
         <div className="mt-10">
-          <h1 className="text-white text-xl text-center my-3">
+          <h1 className="my-3 text-xl text-center text-white">
             jayedbinkirbria@gmail.com
           </h1>
-          <h1 className="text-white text-2xl text-center">
+          <h1 className="text-2xl text-center text-white">
             Mirpur 2, Dhaka, Bangladesh
           </h1>
 
@@ -39,16 +39,32 @@ const AboutMeCard = () => {
         </div>
 
         <div className="flex items-center justify-center gap-4 mt-10">
-          <a href="" target="_blank" className="social-btnStyle">
+          <a
+            href="https://www.instagram.com/jayedbinkibria/"
+            target="_blank"
+            className="social-btnStyle"
+          >
             <FaInstagram />
           </a>
-          <a href="" target="_blank" className="social-btnStyle">
+          <a
+            href="https://www.facebook.com/Talukderjayed"
+            target="_blank"
+            className="social-btnStyle"
+          >
             <FaFacebookF />
           </a>
-          <a href="" target="_blank" className="social-btnStyle">
+          <a
+            href="https://www.linkedin.com/in/jayed-bin-kibria-233570254/"
+            target="_blank"
+            className="social-btnStyle"
+          >
             <FaLinkedinIn />
           </a>
-          <a href="" target="_blank" className="social-btnStyle">
+          <a
+            href="https://www.youtube.com/@jtcinematography3771"
+            target="_blank"
+            className="social-btnStyle"
+          >
             <TiSocialYoutube />
           </a>
         </div>
@@ -57,7 +73,7 @@ const AboutMeCard = () => {
         <div className="flex justify-center mt-8">
           <a
             href="tel:+8801906979013"
-            className="contact-me-btn flex justify-center items-center "
+            className="flex items-center justify-center contact-me-btn "
           >
             <CiMail className="mr-2 text-2xl" />
             Contact Me!

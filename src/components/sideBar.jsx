@@ -2,7 +2,15 @@ import * as React from "react";
 import Box from "@mui/material/Box";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import { IoReorderThree } from "react-icons/io5";
+import {
+  FaHome,
+  FaUserAlt,
+  FaBriefcase,
+  FaProjectDiagram,
+  FaEnvelope,
+} from "react-icons/fa"; // Import additional icons
 import "./SideBar.css"; // Make sure to create this CSS file
+import { MdOutlineGraphicEq } from "react-icons/md";
 
 export default function SideBar() {
   const [state, setState] = React.useState({
@@ -38,24 +46,66 @@ export default function SideBar() {
     };
   }, []);
 
+  // Function to handle smooth scroll
+  const handleSmoothScroll = (e, target) => {
+    e.preventDefault(); // Prevent default anchor behavior
+    const element = document.getElementById(target);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth", // Smooth scrolling
+        block: "start", // Align the top of the element to the viewport
+      });
+    }
+  };
+
   const list = () => (
     <Box
       sx={{ width: 250, backgroundColor: "#1a1a1a" }}
       role="presentation"
       onClick={toggleDrawer(false)}
       onKeyDown={toggleDrawer(false)}
+      
     >
       <ul className="nav-list">
-        <li className={activeSection === "section1" ? "active" : ""}>
-          <a href="#section1">Section 1</a>
+        <li className={activeSection === "introduction" ? "active" : ""}>
+          <a
+            href="#introduction"
+            onClick={(e) => handleSmoothScroll(e, "introduction")}
+          >
+            <FaHome style={{ marginRight: "8px" }} /> Home
+          </a>
         </li>
-        <li className={activeSection === "section2" ? "active" : ""}>
-          <a href="#section2">Section 2</a>
+        <li className={activeSection === "about" ? "active" : ""}>
+          <a href="#about" onClick={(e) => handleSmoothScroll(e, "about")}>
+            <FaUserAlt style={{ marginRight: "8px" }} /> About
+          </a>
         </li>
-        <li className={activeSection === "section3" ? "active" : ""}>
-          <a href="#section3">Section 3</a>
+        <li className={activeSection === "specializations" ? "active" : ""}>
+          <a
+            href="#specializations"
+            onClick={(e) => handleSmoothScroll(e, "specializations")}
+          >
+            <FaBriefcase style={{ marginRight: "8px" }} /> Specializations
+          </a>
         </li>
-        {/* Add more sections as needed */}
+        <li className={activeSection === "skills" ? "active" : ""}>
+          <a href="#skills" onClick={(e) => handleSmoothScroll(e, "skills")}>
+            <MdOutlineGraphicEq style={{ marginRight: "8px" }} /> Skills
+          </a>
+        </li>
+        <li className={activeSection === "projects" ? "active" : ""}>
+          <a
+            href="#projects"
+            onClick={(e) => handleSmoothScroll(e, "projects")}
+          >
+            <FaProjectDiagram style={{ marginRight: "8px" }} /> Projects
+          </a>
+        </li>
+        <li className={activeSection === "contact" ? "active" : ""}>
+          <a href="#contact" onClick={(e) => handleSmoothScroll(e, "contact")}>
+            <FaEnvelope style={{ marginRight: "8px" }} /> Contact Me
+          </a>
+        </li>
       </ul>
     </Box>
   );

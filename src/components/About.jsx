@@ -3,8 +3,8 @@ import { IoPersonOutline } from "react-icons/io5";
 
 const About = () => {
   return (
-    <div style={{ padding: "50px" }}>
-      <button className="header-button my-10">
+    <div style={{ padding: "50px" }} id="about" className="section">
+      <button className="my-10 header-button">
         {" "}
         <IoPersonOutline />
         ABOUT{" "}

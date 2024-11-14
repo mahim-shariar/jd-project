@@ -9,7 +9,7 @@ import Contact from "./Contact";
 
 const Main = () => {
   return (
-    <Container maxWidth="lg" className="container my-5">
+    <Container maxWidth="lg" className="container my-5 ">
       <div>
         <SideBar />
       </div>

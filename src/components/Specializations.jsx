@@ -5,7 +5,7 @@ import { SiAdobe } from "react-icons/si";
 
 const Specializations = () => {
   return (
-    <div style={{ padding: "50px" }}>
+    <div style={{ padding: "50px" }} id="specializations" className="section">
       <button className="header-button">
         <MdOutlineDesignServices />
         Services
@@ -13,7 +13,7 @@ const Specializations = () => {
       <h1 className="text-5xl text-white" style={{ lineHeight: "1.1" }}>
         My <span className="text-[#14c5fd]">Specializations</span>
       </h1>
-      <div className="specialization-cards mt-12 flex flex-col gap-4">
+      <div className="flex flex-col gap-4 mt-12 specialization-cards">
         {/* Card 1 - DaVinci Resolve */}
         <div className="specialization-card p-10 border border-[#999999] rounded-3xl hover:border-[#14c5fd] transition duration-300">
           <div className="flex items-center justify-between">
