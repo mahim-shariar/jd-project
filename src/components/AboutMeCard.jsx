@@ -34,7 +34,7 @@ const AboutMeCard = () => {
           </h1>
 
           <p className="text-[#999999] text-center mt-7 text-sm font-semibold">
-            © 2022 Drake. All Rights Reserved
+            © 2024 JYD. All Rights Reserved
           </p>
         </div>
 
