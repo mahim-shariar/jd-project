@@ -2,7 +2,7 @@ import jayedimg from "../assets/jayed-vhai.jpg";
 import JayedLogo from "../assets/JYD.png";
 import { FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa6";
 import { TiSocialYoutube } from "react-icons/ti";
-import { CiMail } from "react-icons/ci";
+import { MdCall } from "react-icons/md";
 
 const AboutMeCard = () => {
   return (
@@ -75,7 +75,7 @@ const AboutMeCard = () => {
             href="tel:+8801906979013"
             className="flex items-center justify-center contact-me-btn "
           >
-            <CiMail className="mr-2 text-2xl" />
+            <MdCall className="mr-2 text-2xl" />
             Contact Me!
           </a>
         </div>
